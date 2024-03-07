@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "1b53787c-ae92-4ca4-99b5-063bb02dce3f",
+		"name": "Redis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26478093"
+	},
+	"item": [
+		{
+			"name": "localhost:8585/product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":4,\r\n    \"name\":\"Laptop\",\r\n    \"qty\":1,\r\n    \"price\":30000\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8585/product",
+					"host": [
+						"localhost"
+					],
+					"port": "8585",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8585/product",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":4,\r\n    \"name\":\"Laptop\",\r\n    \"qty\":1,\r\n    \"price\":30000\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8585/product",
+							"host": [
+								"localhost"
+							],
+							"port": "8585",
+							"path": [
+								"product"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Feb 2024 13:13:30 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"name\": \"Laptop\",\n    \"qty\": 1,\n    \"price\": 30000\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8585/product/3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":3,\r\n    \"name\":\"Laptop\",\r\n    \"qty\":1,\r\n    \"price\":30000\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8585/product/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8585",
+					"path": [
+						"product",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8585/product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8585/product",
+					"host": [
+						"localhost"
+					],
+					"port": "8585",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8585/product",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8585/product",
+							"host": [
+								"localhost"
+							],
+							"port": "8585",
+							"path": [
+								"product"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Feb 2024 13:14:09 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 4,\n        \"name\": \"Laptop\",\n        \"qty\": 1,\n        \"price\": 30000\n    },\n    {\n        \"id\": 1,\n        \"name\": \"Mobile\",\n        \"qty\": 1,\n        \"price\": 20000\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Laptop\",\n        \"qty\": 2,\n        \"price\": 70000\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "localhost:8585/product/4",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8585/product/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8585",
+					"path": [
+						"product",
+						"4"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8585/product/4",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8585/product/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8585",
+							"path": [
+								"product",
+								"4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "18"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Feb 2024 13:14:37 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "product removed !!"
+				}
+			]
+		}
+	]
+}
